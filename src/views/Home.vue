@@ -47,9 +47,9 @@ export default class Home extends Vue {
   // methods
   // 将json转成我需要的格式
   private transformData (initArr: ApiTypes.ReturnGetRulesData[]) {
-    let sheetArr = initArr.reduce((prev: ApiTypes.ReturnGetRulesData[][], current): ApiTypes.ReturnGetRulesData[][] => {
+    let sheetArr = initArr.reduce((prev: ApiTypes.ReturnGetRulesData[][], current) => {
       if (prev.length > 0) {
-        let isExit = prev.some((item: ApiTypes.ReturnGetRulesData[]) => {
+        let isExit = prev.some((item) => {
           if (item[0].sheetId === current.sheetId) {
             item.push(current)
             return true
@@ -67,7 +67,7 @@ export default class Home extends Vue {
       length: number
       [n: number]: T
     }
-    return sheetArr.map((arr: ApiTypes.ReturnGetRulesData[]): ApiTypes.ReturnGetRulesData[][] => {
+    return sheetArr.map((arr) => {
       let arrayLike: ArrayLike<ApiTypes.ReturnGetRulesData[]> = {} as ArrayLike<ApiTypes.ReturnGetRulesData[]>
       arr.forEach(item => {
         if (arrayLike[item.rowSort]) {
