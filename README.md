@@ -6,4 +6,4 @@ tsconfig.json 中底部的注释是ts配置的中文说明，设为`true`或`fal
 
 settings.json 是我自己用的`vscode`配置，很方便对 `ts+vue` 项目开发
 
-P.S. 虽然只有一个小 demo ，但是项目的配置还是值得一看的。
+P.S. 虽然只有一个小 demo ，但是项目的配置还是值得一看的~~
