@@ -1,0 +1,44 @@
+{
+  "window.zoomLevel": 0,
+  "git.autofetch": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "files.autoSave": "afterDelay",
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.autoFixOnSave": true, //  启用保存时自动修复,默认只支持.js文件
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+          "language": "html",
+          "autoFix": true
+      },
+      {
+          "language": "vue",
+          "autoFix": true
+      }
+  ],
+  "editor.tabSize": 2,
+  "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
+  "vetur.format.defaultFormatter.js": "vscode-typescript", //让vue中的js按编辑器自带的ts格式进行格式化
+  "vetur.format.defaultFormatterOptions": {
+      "js-beautify-html": {
+          "wrap_line_length": 100,
+          "end_with_newline": false,
+          "wrap_attributes": "force" // 可以换成[auto|force|force-aligned|force-expand-multiline]
+      }
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-great-icons",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true
+}
